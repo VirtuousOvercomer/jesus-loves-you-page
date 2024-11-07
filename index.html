@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesus Loves You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <style>
-        /* Style for the page background and text alignment */
+        /* Centering and styling the entire page */
         body {
             display: flex;
             justify-content: center;
@@ -15,15 +16,30 @@
             font-family: Arial, sans-serif;
             background-color: #A8A8A8; /* Ohio State light gray background */
             color: #333;
+            text-align: center; /* Center the text */
         }
         
-        /* Style for the main message text */
+        /* Main heading style */
         h1 {
-            font-size: 4em; /* Large font size */
-            color: #BB0000; /* Ohio State scarlet red for the text */
-            font-family: 'Arial Black', sans-serif; /* Bold and strong font */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for contrast */
+            font-size: 8em; /* Double the previous font size */
+            color: #BB0000; /* Ohio State scarlet red */
+            font-family: 'Roboto', sans-serif; /* Bold Google Font */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
             margin: 0;
+            line-height: 1.2; /* Adjust line height for better readability */
+        }
+
+        /* Responsive adjustments for mobile screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 5em; /* Adjust font size for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 3em; /* Further reduce font size for very small screens */
+            }
         }
     </style>
 </head>
